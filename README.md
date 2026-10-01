@@ -9,7 +9,7 @@ A bilingual (English default, Simplified Chinese) static site. No build step and
 - `.nojekyll` – tells GitHub Pages to serve the files as they are.
 
 ## Deploy
-**GitHub Pages:** push this folder to the root of a repository, then in the repo go to Settings → Pages → Build and deployment → Source: *Deploy from a branch*, choose `main` and `/ (root)`, and save. To use liora.com.my, enter it under *Custom domain* (GitHub adds a `CNAME` file) and point the domain's DNS at GitHub Pages: four `A` records for `@` to 185.199.108.153, 185.199.109.153, 185.199.110.153 and 185.199.111.153, plus a `CNAME` record for `www` to `<your-github-username>.github.io`. Then tick *Enforce HTTPS*.
+**GitHub Pages:** push this folder to the root of a repository, then in the repo go to Settings → Pages → Build and deployment → Source: *Deploy from a branch*, choose `main` and `/ (root)`, and save. The `CNAME` file already contains liora.com.my, so GitHub will show it under *Custom domain*. Then point the domain's DNS at GitHub Pages: four `A` records for `@` to 185.199.108.153, 185.199.109.153, 185.199.110.153 and 185.199.111.153, plus a `CNAME` record for `www` to `<your-github-username>.github.io`. Then tick *Enforce HTTPS*.
 
 Any other static host (Cloudflare Pages, Netlify, cPanel public_html) works too: upload the folder as is.
 
@@ -39,3 +39,6 @@ Free photos from Unsplash (Unsplash License, free for commercial use, no attribu
 
 ## Wellness Tips photos
 `assets/img/wellness/` holds 12 free Unsplash photos (Unsplash License): clean-1 photo-1547496502, clean-2 photo-1494390248081, clean-3 photo-1606757819934, sleep-1 photo-1686828752370, sleep-2 photo-1585128719715, sleep-3 photo-1520206183501, move-1 photo-1571019613454, move-2 photo-1544367567, move-3 photo-1546483875, morning-1 photo-1552650272, morning-2 photo-1501959915551, morning-3 photo-1597586594276.
+
+## Link previews (WhatsApp, Facebook)
+`index.html` has Open Graph tags pointing at `https://liora.com.my/assets/img/og-image.jpg` (1200×630, LIORA logo). Previews only work once the site is live on liora.com.my. WhatsApp caches previews, so a link shared before the switch may keep its old preview for a while. Facebook's Sharing Debugger (developers.facebook.com/tools/debug) can force a refresh.
