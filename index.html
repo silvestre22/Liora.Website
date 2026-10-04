@@ -41,7 +41,18 @@
     <nav class="nav" id="nav" aria-label="Main">
       <a href="#about"><span lang="en">About</span><span lang="zh">关于我们</span></a>
       <a href="#treatments"><span lang="en">Treatments</span><span lang="zh">疗程</span></a>
-      <a href="#livra">LIVRA</a>
+      <div class="nav-group">
+        <a href="#livra" class="nav-group__top" aria-haspopup="true">LIVRA<svg class="caret" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="subnav" role="menu">
+          <a role="menuitem" href="#livra"><span lang="en">All LIVRA products</span><span lang="zh">全部 LIVRA 产品</span></a>
+          <a role="menuitem" href="#livra-regrow">Regrow &amp; Replenish</a>
+          <a role="menuitem" href="#livra-body">Body Series ALL in 1</a>
+          <a role="menuitem" href="#livra-velvet">Radiance Velvet</a>
+          <a role="menuitem" href="#livra-intimate">Rebalancing Intimate</a>
+          <a role="menuitem" href="#livra-essence">Revitalize Essence</a>
+          <a role="menuitem" href="#livra-cleanser">Recode Cleanser</a>
+        </div>
+      </div>
       <a href="#academy"><span lang="en">Academy</span><span lang="zh">学院</span></a>
       <a href="#creation"><span lang="en">Creation</span><span lang="zh">品牌共创</span></a>
       <a href="#journal"><span lang="en">Wellness Tips</span><span lang="zh">健康贴士</span></a>
@@ -271,12 +282,10 @@
         <p class="eyebrow"><span lang="en">Home care by LIORA</span><span lang="zh">LIORA 居家护理</span></p>
         <h2><span lang="en">LIVRA. <em>Daily rituals,</em> made with science.</span><span lang="zh">LIVRA，<em>以科学打造</em>的日常仪式</span></h2>
       </div>
-      <p class="lede" style="margin-top:-24px;margin-bottom:32px"><span lang="en">Four steps, morning and night: cleanse, tone, treat and seal.</span><span lang="zh">早晚四步：洁面、爽肤、精华、锁护。</span></p>
-      <div class="grid g4 livra-row">
-        <a class="pcard" href="#livra-ritual"><div class="ph ph--sq" data-cap="LIVRA Recode Cleanser"><img loading="lazy" src="assets/img/livra-recode-cleanser.jpg" alt="LIVRA Recode Cleanser"></div><span class="label">01 · <span lang="en">CLEANSE</span><span lang="zh">洁面</span> · 100 ml</span><h3 style="font-size:var(--step-1)">LIVRA Recode Cleanser</h3></a>
+      <p class="lede" style="margin-top:-24px;margin-bottom:32px"><span lang="en">Two steps, morning and night: recode, then bloom.</span><span lang="zh">早晚两步：先焕新，再绽放。</span></p>
+      <div class="grid g2 livra-row" style="max-width:640px">
+        <a class="pcard" href="#livra-cleanser"><div class="ph ph--sq" data-cap="LIVRA Recode Cleanser"><img loading="lazy" src="assets/img/livra-recode-cleanser.jpg" alt="LIVRA Recode Cleanser"></div><span class="label">01 · <span lang="en">CLEANSE</span><span lang="zh">洁面</span> · 100 ml</span><h3 style="font-size:var(--step-1)">LIVRA Recode Cleanser</h3></a>
         <a class="pcard" href="#livra-ritual"><div class="ph ph--sq" data-cap="LIVRA Bloom Toner"><img loading="lazy" src="assets/img/livra-bloom-toner.jpg" alt="LIVRA Bloom Toner"></div><span class="label">02 · <span lang="en">TONE</span><span lang="zh">爽肤</span> · 120 ml</span><h3 style="font-size:var(--step-1)">LIVRA Bloom Toner</h3></a>
-        <a class="pcard" href="#livra-ritual"><div class="ph ph--sq" data-cap="LIVRA Caviar Essence"><img loading="lazy" src="assets/img/livra-caviar-essence.jpg" alt="LIVRA Caviar Essence"></div><span class="label">03 · <span lang="en">TREAT</span><span lang="zh">精华</span> · 30 ml</span><h3 style="font-size:var(--step-1)">LIVRA Caviar Essence</h3></a>
-        <a class="pcard" href="#livra-ritual"><div class="ph ph--sq" data-cap="LIVRA CoreLift Cream"><img loading="lazy" src="assets/img/livra-corelift-cream.jpg" alt="LIVRA CoreLift Cream"></div><span class="label">04 · <span lang="en">SEAL</span><span lang="zh">面霜</span> · 120 g</span><h3 style="font-size:var(--step-1)">LIVRA CoreLift Cream</h3></a>
       </div>
       <p style="margin-top:28px"><a class="link-arrow" href="#livra"><span lang="en">Explore the full LIVRA range</span><span lang="zh">探索完整 LIVRA 系列</span> →</a></p></div>
     </div>
@@ -551,89 +560,283 @@
   <div class="wrap page-hero">
     <p class="eyebrow">LIVRA</p>
     <h1 style="margin-top:1rem"><span lang="en">Daily rituals, <em>made with science</em></span><span lang="zh">以科学打造的<em>日常仪式</em></span></h1>
-    <p class="lede"><span lang="en">LIVRA is LIORA's home-care line, created so the results you build in treatment carry on at home. Swipe through each product guide below.</span><span lang="zh">LIVRA 是 LIORA 的居家护理系列，让您在疗程中累积的成果在家中延续。滑动浏览下方各产品介绍。</span></p>
+    <p class="lede"><span lang="en">LIVRA is LIORA's home-care line, created so the results you build in treatment carry on at home. Choose a product to see its full guide.</span><span lang="zh">LIVRA 是 LIORA 的居家护理系列，让您在疗程中累积的成果在家中延续。选择产品，查看完整介绍。</span></p>
   </div>
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <p class="eyebrow"><span lang="en">The collection</span><span lang="zh">产品系列</span></p>
+      <div class="lgrid">
+        <a class="lcard" href="#livra-regrow">
+          <div class="lcard__img"><img loading="lazy" src="assets/img/regrow/slide-01.jpg" alt="LIVRA Regrow &amp; Replenish"></div>
+          <div class="lcard__body">
+            <span class="label muted">01 · <span lang="en">SCALP &amp; HAIR</span><span lang="zh">头皮与秀发</span></span>
+            <h3>LIVRA Regrow &amp; Replenish</h3>
+            <p class="muted"><span lang="en">Botanical science for a complete hair recovery ritual: a shampoo to purify the scalp and a conditioner to repair the hair.</span><span lang="zh">植物修护 × 科学配方，打造完整头皮护理仪式：洗发露净澈头皮，护发素修护发丝。</span></p>
+            <ul class="lcard__tags"><li><span lang="en">Purifies the scalp</span><span lang="zh">净澈头皮</span></li><li><span lang="en">Strengthens roots</span><span lang="zh">强韧发根</span></li><li><span lang="en">Repairs and smooths</span><span lang="zh">修护柔顺</span></li></ul>
+            <span class="link-arrow"><span lang="en">View product guide</span><span lang="zh">查看产品介绍</span> →</span>
+          </div>
+        </a>
+        <a class="lcard" href="#livra-body">
+          <div class="lcard__img"><img loading="lazy" src="assets/img/body/slide-01.jpg" alt="LIVRA Body Series ALL in 1"></div>
+          <div class="lcard__body">
+            <span class="label muted">02 · <span lang="en">BODY CARE</span><span lang="zh">全身护理</span></span>
+            <h3>LIVRA Body Series ALL in 1</h3>
+            <p class="muted"><span lang="en">A gentle blend of botanical therapy and science to reconnect your body, skin and emotional balance. Four products, four wellness moments.</span><span lang="zh">透过植物疗愈与科学调理，让身体、肌肤与情绪重新回到平衡。四款产品，四种疗愈时刻。</span></p>
+            <ul class="lcard__tags"><li><span lang="en">Botanical therapy</span><span lang="zh">植物疗愈</span></li><li><span lang="en">Morning to evening</span><span lang="zh">从早到晚</span></li><li><span lang="en">Body, skin and mood</span><span lang="zh">身体 · 肌肤 · 情绪</span></li></ul>
+            <span class="link-arrow"><span lang="en">View product guide</span><span lang="zh">查看产品介绍</span> →</span>
+          </div>
+        </a>
+        <a class="lcard" href="#livra-velvet">
+          <div class="lcard__img"><img loading="lazy" src="assets/img/velvet/slide-01.jpg" alt="LIVRA Radiance Velvet"></div>
+          <div class="lcard__body">
+            <span class="label muted">03 · <span lang="en">SKIN RADIANCE</span><span lang="zh">肌肤光采</span></span>
+            <h3>LIVRA Radiance Velvet</h3>
+            <p class="muted"><span lang="en">A body lotion for deep hydration, barrier repair and natural radiance, with a lightweight, fast-absorbing texture.</span><span lang="zh">深层保湿 · 屏障修护 · 自然焕亮的身体乳，质地轻盈易吸收。</span></p>
+            <ul class="lcard__tags"><li><span lang="en">Deep hydration</span><span lang="zh">深层保湿</span></li><li><span lang="en">Barrier repair</span><span lang="zh">屏障修护</span></li><li><span lang="en">Natural radiance</span><span lang="zh">自然焕亮</span></li></ul>
+            <span class="link-arrow"><span lang="en">View product guide</span><span lang="zh">查看产品介绍</span> →</span>
+          </div>
+        </a>
+        <a class="lcard" href="#livra-intimate">
+          <div class="lcard__img"><img loading="lazy" src="assets/img/intimate/slide-01.jpg" alt="LIVRA Rebalancing Intimate"></div>
+          <div class="lcard__body">
+            <span class="label muted">04 · <span lang="en">INTIMATE CARE</span><span lang="zh">私密护理</span></span>
+            <h3>LIVRA Rebalancing Intimate</h3>
+            <p class="muted"><span lang="en">A gentle foam wash for feminine intimate care, with botanical extracts and probiotic ferment to cleanse, soothe and support a healthy pH balance.</span><span lang="zh">专为女性私密肌肤设计的温和泡沫洁净液，结合植物萃取与益生菌发酵成分，温和洁净、舒缓不适、维持健康酸碱平衡。</span></p>
+            <ul class="lcard__tags"><li><span lang="en">Gentle cleansing</span><span lang="zh">温和洁净</span></li><li><span lang="en">Soothing comfort</span><span lang="zh">舒缓不适</span></li><li><span lang="en">Healthy pH balance</span><span lang="zh">酸碱平衡</span></li></ul>
+            <span class="link-arrow"><span lang="en">View product guide</span><span lang="zh">查看产品介绍</span> →</span>
+          </div>
+        </a>
+        <a class="lcard" href="#livra-essence">
+          <div class="lcard__img"><img loading="lazy" src="assets/img/essence/slide-01.jpg" alt="LIVRA Revitalize Essence"></div>
+          <div class="lcard__body">
+            <span class="label muted">05 · <span lang="en">BODY ESSENCE</span><span lang="zh">身体精华</span></span>
+            <h3>LIVRA Revitalize Essence</h3>
+            <p class="muted"><span lang="en">A warm, water-soluble massage essence oil with marine and plant extracts. It melts into the skin, relaxes the body and rinses off without a greasy residue.</span><span lang="zh">水溶性温热按摩精华油，结合海藻与植物萃取，舒缓身心、柔亮肌肤，轻松冲洗不油腻。</span></p>
+            <ul class="lcard__tags"><li><span lang="en">Warming massage</span><span lang="zh">温热按摩</span></li><li><span lang="en">Marine extracts</span><span lang="zh">海洋植萃</span></li><li><span lang="en">Rinses clean</span><span lang="zh">轻松冲洗</span></li></ul>
+            <span class="link-arrow"><span lang="en">View product guide</span><span lang="zh">查看产品介绍</span> →</span>
+          </div>
+        </a>
+        <a class="lcard" href="#livra-cleanser">
+          <div class="lcard__img"><img loading="lazy" src="assets/img/cleanser/slide-01.jpg" alt="LIVRA Recode Cleanser"></div>
+          <div class="lcard__body">
+            <span class="label muted">06 · <span lang="en">FACE CARE</span><span lang="zh">面部护理</span></span>
+            <h3>LIVRA Recode Cleanser</h3>
+            <p class="muted"><span lang="en">An amino-acid facial cleanser that cleanses gently, strengthens the skin barrier and keeps skin hydrated. Suitable for all skin types and never leaves skin tight.</span><span lang="zh">氨基酸洁面乳，温和洁净、强韧屏障、深层补水。适合所有肤质，洗后不紧绷。</span></p>
+            <ul class="lcard__tags"><li><span lang="en">Gentle amino-acid cleanse</span><span lang="zh">氨基酸温和洁净</span></li><li><span lang="en">Barrier strength</span><span lang="zh">强韧屏障</span></li><li><span lang="en">Non-drying</span><span lang="zh">洗后不紧绷</span></li></ul>
+            <span class="link-arrow"><span lang="en">View product guide</span><span lang="zh">查看产品介绍</span> →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
   <section class="section section--tint livra-zone" id="livra-ritual">
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow"><span lang="en">The LIVRA ritual</span><span lang="zh">LIVRA 护肤仪式</span></p>
-        <h2><span lang="en">Cleanse, tone, treat, <em>seal</em></span><span lang="zh">洁面、爽肤、精华、<em>锁护</em></span></h2>
+        <h2><span lang="en">Recode, then <em>bloom</em></span><span lang="zh">焕新，再<em>绽放</em></span></h2>
         <p class="lede"><span lang="en">Use them in this order, morning and night. Each step prepares the skin for the next.</span><span lang="zh">早晚按此顺序使用，每一步都为下一步做好准备。</span></p>
       </div>
-      <div class="grid g4 livra-row">
-        <a class="pcard" href="#join"><div class="ph ph--sq" data-cap="LIVRA Recode Cleanser"><img loading="lazy" src="assets/img/livra-recode-cleanser.jpg" alt="LIVRA Recode Cleanser"></div><span class="label">01 · <span lang="en">CLEANSE</span><span lang="zh">洁面</span> · 100 ml</span><h3 style="font-size:var(--step-1)">LIVRA Recode Cleanser</h3></a>
+      <div class="grid g2 livra-row" style="max-width:640px">
+        <a class="pcard" href="#livra-cleanser"><div class="ph ph--sq" data-cap="LIVRA Recode Cleanser"><img loading="lazy" src="assets/img/livra-recode-cleanser.jpg" alt="LIVRA Recode Cleanser"></div><span class="label">01 · <span lang="en">CLEANSE</span><span lang="zh">洁面</span> · 100 ml</span><h3 style="font-size:var(--step-1)">LIVRA Recode Cleanser</h3></a>
         <a class="pcard" href="#join"><div class="ph ph--sq" data-cap="LIVRA Bloom Toner"><img loading="lazy" src="assets/img/livra-bloom-toner.jpg" alt="LIVRA Bloom Toner"></div><span class="label">02 · <span lang="en">TONE</span><span lang="zh">爽肤</span> · 120 ml</span><h3 style="font-size:var(--step-1)">LIVRA Bloom Toner</h3></a>
-        <a class="pcard" href="#join"><div class="ph ph--sq" data-cap="LIVRA Caviar Essence"><img loading="lazy" src="assets/img/livra-caviar-essence.jpg" alt="LIVRA Caviar Essence"></div><span class="label">03 · <span lang="en">TREAT</span><span lang="zh">精华</span> · 30 ml</span><h3 style="font-size:var(--step-1)">LIVRA Caviar Essence</h3></a>
-        <a class="pcard" href="#join"><div class="ph ph--sq" data-cap="LIVRA CoreLift Cream"><img loading="lazy" src="assets/img/livra-corelift-cream.jpg" alt="LIVRA CoreLift Cream"></div><span class="label">04 · <span lang="en">SEAL</span><span lang="zh">面霜</span> · 120 g</span><h3 style="font-size:var(--step-1)">LIVRA CoreLift Cream</h3></a>
       </div>
       <p class="muted" style="margin-top:24px"><span lang="en">Available in the Liora app. Every RM 1 earns 1 LP.</span><span lang="zh">可在 Liora App 购买，每消费 RM 1 赚取 1 LP。</span></p>
     </div>
   </section>
-  <div class="wrap" style="padding-bottom:96px">
-    <p class="eyebrow" style="margin-top:72px"><span lang="en">Product guides</span><span lang="zh">产品介绍</span></p>
-    <article class="article article--guide" id="livra-regrow">
-      <div><p class="label muted">01 · <span lang="en">SCALP &amp; HAIR</span><span lang="zh">头皮与秀发</span></p><h2 style="margin-top:.6rem">LIVRA Regrow &amp; Replenish</h2><p class="muted" style="margin-top:.8rem;max-width:60ch"><span lang="en">Botanical science for a complete hair recovery ritual: a shampoo to purify the scalp and a conditioner to repair the hair.</span><span lang="zh">植物修护 × 科学配方，打造完整头皮护理仪式：洗发露净澈头皮，护发素修护发丝。</span></p></div>
-      <ol class="guide guide--wide" aria-label="Product guide">
-        <li class="gcard gcard--cover"><span class="gcard__k">LIVRA · <span lang="en">Hair recovery ritual</span><span lang="zh">秀发修护仪式</span></span><h4><span lang="en">Healthy hair begins at the root</span><span lang="zh">从根源开始，养出健康秀发</span></h4><p><span lang="en">Purify · Repair · Restore</span><span lang="zh">净澈 · 修护 · 焕活</span></p><span class="gcard__swipe"><span lang="en">Shampoo + Conditioner · 300 ml each</span><span lang="zh">洗发露 + 护发素 · 各 300 ml</span> · <span lang="en">swipe</span><span lang="zh">左右滑动</span> →</span><span class="gcard__orb" aria-hidden="true"></span><span class="gcard__orb gcard__orb--2" aria-hidden="true"></span></li>
-        <li class="gcard gcard--list gcard--tint"><span class="gcard__n"><span lang="en">Why hair falls</span><span lang="zh">为什么会掉发</span></span><h4><span lang="en">Healthy hair starts with a healthy scalp</span><span lang="zh">健康秀发，从健康头皮开始</span></h4><ol class="gcard__plan"><li><b>01</b><span lang="en">Excess oil</span><span lang="zh">多余油脂</span></li><li><b>02</b><span lang="en">Clogged follicles</span><span lang="zh">毛囊堵塞</span></li><li><b>03</b><span lang="en">Scalp imbalance</span><span lang="zh">头皮失衡</span></li><li><b>04</b><span lang="en">Weak roots</span><span lang="zh">根系薄弱</span></li><li><b>05</b><span lang="en">Hair fall</span><span lang="zh">脱发</span></li></ol><p class="gcard__note"><span lang="en">Often hair fall isn’t a hair problem. It’s a scalp losing its balance.</span><span lang="zh">很多时候，掉发并不是头发的问题，而是头皮正在失去平衡。</span></p></li>
-        <li class="gcard gcard--list"><span class="gcard__n"><span lang="en">Two-step ritual</span><span lang="zh">双步骤护理</span></span><h4><span lang="en">Purify the scalp, then repair the hair</span><span lang="zh">净化头皮，更要修护发丝</span></h4><ul class="gcard__ticks"><li><span lang="en">Regrow Shampoo: purify, cleanse, strengthen roots</span><span lang="zh">Regrow 洗发露：净澈、洁净、强韧发根</span></li><li><span lang="en">Regrow Shampoo: balance oil and soothe the scalp</span><span lang="zh">Regrow 洗发露：平衡油脂、舒缓头皮</span></li><li><span lang="en">Replenish Conditioner: repair cuticles, nourish</span><span lang="zh">Replenish 护发素：修护毛鳞片、深层滋养</span></li><li><span lang="en">Replenish Conditioner: lock in moisture for smooth, shiny hair</span><span lang="zh">Replenish 护发素：锁住水分，柔顺亮泽</span></li></ul></li>
-        <li class="gcard"><span class="gcard__n"><span lang="en">Key ingredient</span><span lang="zh">核心成分</span></span><span class="gcard__i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c0-8 6-14 15-14 0 9-6 15-14 15"/><path d="M5 19l8-8"/></svg></span><h4><span lang="en">Panax Ginseng Vesicles</span><span lang="zh">人参囊泡</span></h4><p><span lang="en">Encourages healthier hair growth and supports scalp vitality.</span><span lang="zh">促进健康头皮环境，提升毛囊活力。</span></p></li>
-        <li class="gcard"><span class="gcard__n"><span lang="en">Key ingredient</span><span lang="zh">核心成分</span></span><span class="gcard__i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v9M12 12c-2 2-4 3-6 7M12 12c2 2 4 3 6 7M12 12v9"/></svg></span><h4><span lang="en">Thuja Orientalis</span><span lang="zh">侧柏</span></h4><p><span lang="en">Supports stronger roots and helps reduce hair fall.</span><span lang="zh">帮助稳固发根，减少掉发。</span></p></li>
-        <li class="gcard"><span class="gcard__n"><span lang="en">Key ingredients</span><span lang="zh">核心成分</span></span><span class="gcard__i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/><circle cx="12" cy="14.5" r="2"/></svg></span><h4><span lang="en">Sorbus Fruit · Lactobacillus</span><span lang="zh">花楸果 · 乳酸菌</span></h4><p><span lang="en">Soothes and hydrates, and supports scalp balance.</span><span lang="zh">舒缓敏感，维持头皮微生态平衡。</span></p></li>
-        <li class="gcard"><span class="gcard__n"><span lang="en">Key ingredients</span><span lang="zh">核心成分</span></span><span class="gcard__i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/><circle cx="12" cy="14.5" r="2"/></svg></span><h4><span lang="en">Coconut, Olive &amp; Argan Oil</span><span lang="zh">椰子油、橄榄油与摩洛哥坚果油</span></h4><p><span lang="en">Smooths and restores shine, and deeply nourishes the hair.</span><span lang="zh">恢复柔顺亮泽，深层滋养发丝。</span></p></li>
-        <li class="gcard gcard--list gcard--tint"><span class="gcard__n"><span lang="en">Feel the difference</span><span lang="zh">感受改变</span></span><h4><span lang="en">From scalp to strand</span><span lang="zh">从头皮到发丝</span></h4><ol class="gcard__plan"><li><b><span lang="en">Every wash</span><span lang="zh">每次洗后</span></b><span lang="en">Refreshing comfort, healthy shine, soft and manageable, lightweight</span><span lang="zh">清爽舒适、自然光泽、柔顺好梳理、轻盈不厚重</span></li><li><b><span lang="en">Over time</span><span lang="zh">持续使用</span></b><span lang="en">Stronger roots, less hair fall, a healthier scalp, fuller and thicker hair</span><span lang="zh">发根更强韧、掉发减少、头皮更健康、发丝更丰盈</span></li></ol></li>
-        <li class="gcard gcard--list gcard--tint"><span class="gcard__n"><span lang="en">How to use</span><span lang="zh">使用方式</span></span><h4><span lang="en">Your daily hair ritual</span><span lang="zh">每日秀发护理</span></h4><ol class="gcard__plan"><li><b>1</b><span lang="en">Wet your hair</span><span lang="zh">湿润头发</span></li><li><b>2</b><span lang="en">Regrow Shampoo: massage the scalp gently for 1–2 minutes</span><span lang="zh">Regrow 洗发露：轻柔按摩头皮 1–2 分钟</span></li><li><b>3</b><span lang="en">Rinse</span><span lang="zh">冲洗干净</span></li><li><b>4</b><span lang="en">Replenish Conditioner: apply from mid-lengths to ends, leave 2–3 minutes</span><span lang="zh">Replenish 护发素：涂抹发中至发尾，停留 2–3 分钟</span></li><li><b>5</b><span lang="en">Rinse again thoroughly</span><span lang="zh">彻底冲洗</span></li></ol></li>
-      </ol>
-    </article>
-    <article class="article article--guide" id="livra-body">
-      <div><p class="label muted">02 · <span lang="en">BODY CARE</span><span lang="zh">全身护理</span></p><h2 style="margin-top:.6rem">LIVRA Body Series ALL in 1</h2><p class="muted" style="margin-top:.8rem;max-width:60ch"><span lang="en">A gentle blend of botanical therapy and science to reconnect your body, skin and emotional balance. Four products, four wellness moments.</span><span lang="zh">透过植物疗愈与科学调理，让身体、肌肤与情绪重新回到平衡。四款产品，四种疗愈时刻。</span></p></div>
-      <ol class="guide guide--wide" aria-label="Product guide">
-        <li class="gcard gcard--cover"><span class="gcard__k">LIVRA · <span lang="en">Wellness Series</span><span lang="zh">Wellness Series</span></span><h4><span lang="en">Reawaken your body &amp; inner calm</span><span lang="zh">重启身心，找回内在的轻盈</span></h4><p><span lang="en">Four products, four wellness moments.</span><span lang="zh">四款产品 · 四种疗愈时刻</span></p><span class="gcard__swipe"><span lang="en">Body wash · body oil · roll-on</span><span lang="zh">沐浴露 · 身体油 · 滚珠精油</span> · <span lang="en">swipe</span><span lang="zh">左右滑动</span> →</span><span class="gcard__orb" aria-hidden="true"></span><span class="gcard__orb gcard__orb--2" aria-hidden="true"></span></li>
-        <li class="gcard gcard--list gcard--tint"><span class="gcard__n"><span lang="en">Do you ever feel…</span><span lang="zh">你是否也感到……</span></span><h4><span lang="en">Made for busy bodies and minds</span><span lang="zh">为疲惫的身心而设计</span></h4><ul class="gcard__ticks"><li><span lang="en">Physically exhausted and mentally overwhelmed</span><span lang="zh">身体疲惫、精神紧绷</span></li><li><span lang="en">Difficulty sleeping or constantly stressed</span><span lang="zh">睡眠不稳、压力堆积</span></li><li><span lang="en">Dull, tired-looking skin</span><span lang="zh">肌肤暗沉、缺乏活力</span></li><li><span lang="en">Low energy throughout the day</span><span lang="zh">一整天都提不起劲</span></li></ul></li>
-        <li class="gcard"><span class="gcard__n"><span lang="en">Morning</span><span lang="zh">早晨</span></span><span class="gcard__i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span><h4><span lang="en">Refresh Body Wash</span><span lang="zh">Refresh 沐浴露</span></h4><span class="gcard__meta"><span lang="en">Peppermint &amp; Eucalyptus · 500 ml</span><span lang="zh">薄荷 × 尤加利 · 500 ml</span></span><p><span lang="en">Awaken your senses and refresh your body. Ideal in the morning, in hot weather or after exercise.</span><span lang="zh">唤醒感官，恢复清爽活力。适合早晨、炎热天气或运动后使用。</span></p></li>
-        <li class="gcard"><span class="gcard__n"><span lang="en">Evening</span><span lang="zh">晚上</span></span><span class="gcard__i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></span><h4><span lang="en">Relaxing Body Wash</span><span lang="zh">Relaxing 沐浴露</span></h4><span class="gcard__meta"><span lang="en">Lavender &amp; Clary Sage · 500 ml</span><span lang="zh">薰衣草 × 快乐鼠尾草 · 500 ml</span></span><p><span lang="en">Turn daily cleansing into a soothing ritual that eases the day’s fatigue before bed.</span><span lang="zh">舒缓身心，让每天沐浴成为最放松的仪式，帮助放松、舒缓一天疲劳。</span></p></li>
-        <li class="gcard"><span class="gcard__n"><span lang="en">After a long day</span><span lang="zh">疲惫时</span></span><span class="gcard__i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13V5.5a1.5 1.5 0 0 1 3 0V11M11 10V4.5a1.5 1.5 0 0 1 3 0V11M14 10.5V6a1.5 1.5 0 0 1 3 0v8a7 7 0 0 1-7 7h-.5A6.5 6.5 0 0 1 4 15.5l-1-3a1.5 1.5 0 0 1 2.8-1L8 14"/></svg></span><h4><span lang="en">Release Body Oil</span><span lang="zh">Release 身体油</span></h4><span class="gcard__meta"><span lang="en">Ginger &amp; Grapefruit · 200 ml</span><span lang="zh">姜 × 葡萄柚 · 200 ml</span></span><p><span lang="en">Massage, nourish, relax. Eases tension and soothes physical fatigue while nourishing the skin.</span><span lang="zh">按摩身体、滋养保湿、舒缓紧绷，帮助舒缓身体疲劳。</span></p></li>
-        <li class="gcard"><span class="gcard__n"><span lang="en">Anytime</span><span lang="zh">随时</span></span><span class="gcard__i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="7" width="8" height="14" rx="2"/><circle cx="12" cy="5" r="2"/></svg></span><h4><span lang="en">Recharge Roll-On</span><span lang="zh">Recharge 滚珠精油</span></h4><span class="gcard__meta"><span lang="en">Sandalwood &amp; Clary Sage</span><span lang="zh">檀香 × 快乐鼠尾草</span></span><p><span lang="en">Roll, breathe, recharge. Apply to wrists, temples or behind the ears to stay calm and focused.</span><span lang="zh">涂抹于手腕、太阳穴或耳后，稳定情绪、恢复专注，随时舒缓压力。</span></p></li>
-        <li class="gcard gcard--list gcard--tint"><span class="gcard__n"><span lang="en">Botanical ingredients</span><span lang="zh">植物成分</span></span><h4><span lang="en">The healing power of plants</span><span lang="zh">来自植物的疗愈力量</span></h4><ol class="gcard__plan"><li><b><span lang="en">Lavender</span><span lang="zh">薰衣草</span></b><span lang="en">Promotes relaxation and calm</span><span lang="zh">帮助放松身心，营造宁静感</span></li><li><b><span lang="en">Clary Sage</span><span lang="zh">快乐鼠尾草</span></b><span lang="en">Supports emotional balance</span><span lang="zh">舒缓情绪，帮助身心恢复平衡</span></li><li><b><span lang="en">Peppermint</span><span lang="zh">薄荷</span></b><span lang="en">Cooling and refreshing</span><span lang="zh">带来清凉舒爽感</span></li><li><b><span lang="en">Eucalyptus</span><span lang="zh">尤加利</span></b><span lang="en">Clean, invigorating aroma</span><span lang="zh">清新醒肤，感官更舒畅</span></li><li><b><span lang="en">Ginger</span><span lang="zh">姜</span></b><span lang="en">Warming, eases fatigue</span><span lang="zh">温暖身体，舒缓疲劳</span></li><li><b><span lang="en">Grapefruit</span><span lang="zh">葡萄柚</span></b><span lang="en">Uplifting citrus notes</span><span lang="zh">清新柑橘香，轻盈愉悦</span></li><li><b><span lang="en">Sandalwood</span><span lang="zh">檀香</span></b><span lang="en">Calming, grounding</span><span lang="zh">沉稳木质香，安定心情</span></li></ol></li>
-        <li class="gcard gcard--list gcard--tint"><span class="gcard__n"><span lang="en">Why you’ll love LIVRA</span><span lang="zh">为什么选择 LIVRA</span></span><h4><span lang="en">Wellness begins with one simple ritual</span><span lang="zh">让疗愈成为每天的习惯</span></h4><ul class="gcard__ticks"><li><span lang="en">Crafted with botanical essential oils</span><span lang="zh">精选植物精油</span></li><li><span lang="en">Gentle for everyday care</span><span lang="zh">温和洁净与滋养</span></li><li><span lang="en">Supports body, skin and emotional well-being</span><span lang="zh">身体与情绪同步照顾</span></li><li><span lang="en">Suitable for daily use</span><span lang="zh">适合每日使用</span></li><li><span lang="en">Creates a relaxing wellness ritual</span><span lang="zh">打造疗愈生活仪式</span></li></ul></li>
-      </ol>
-    </article>
-    <article class="article article--guide" id="livra-velvet">
-      <div><p class="label muted">03 · <span lang="en">SKIN RADIANCE</span><span lang="zh">肌肤光采</span></p><h2 style="margin-top:.6rem">LIVRA Radiance Velvet</h2><p class="muted" style="margin-top:.8rem;max-width:60ch"><span lang="en">A body lotion for deep hydration, barrier repair and natural radiance, with a lightweight, fast-absorbing texture.</span><span lang="zh">深层保湿 · 屏障修护 · 自然焕亮的身体乳，质地轻盈易吸收。</span></p></div>
-      <ol class="guide guide--wide" aria-label="Product guide">
-        <li class="gcard gcard--cover"><span class="gcard__k">LIVRA · <span lang="en">Body lotion</span><span lang="zh">身体乳</span></span><h4><span lang="en">Radiance activated, hydration restored</span><span lang="zh">柔亮肌肤，由内焕发</span></h4><p><span lang="en">Deep hydration · barrier repair · natural radiance</span><span lang="zh">深层保湿 · 屏障修护 · 自然焕亮</span></p><span class="gcard__swipe"><span lang="en">100 ml</span><span lang="zh">100 ml</span> · <span lang="en">swipe</span><span lang="zh">左右滑动</span> →</span><span class="gcard__orb" aria-hidden="true"></span><span class="gcard__orb gcard__orb--2" aria-hidden="true"></span></li>
-        <li class="gcard gcard--list gcard--tint"><span class="gcard__n"><span lang="en">Why skin needs more than moisture</span><span lang="zh">为什么肌肤需要的不只是保湿</span></span><h4><span lang="en">Daily UV, air-conditioning and stress can cause</span><span lang="zh">紫外线、冷气、干燥与压力容易带来</span></h4><ul class="gcard__ticks"><li><span lang="en">Dryness and rough texture</span><span lang="zh">干燥粗糙</span></li><li><span lang="en">Tightness and dehydration</span><span lang="zh">紧绷缺水</span></li><li><span lang="en">Sensitivity and redness</span><span lang="zh">敏感泛红</span></li><li><span lang="en">Dullness and uneven tone</span><span lang="zh">暗沉、肤色不均</span></li></ul></li>
-        <li class="gcard gcard--list"><span class="gcard__n"><span lang="en">Key ingredients</span><span lang="zh">核心成分</span></span><h4><span lang="en">Powered by nature &amp; science</span><span lang="zh">天然植萃 × 科学护肤</span></h4><ol class="gcard__plan"><li><b><span lang="en">Niacinamide</span><span lang="zh">烟酰胺</span></b><span lang="en">Brightens while supporting the skin barrier</span><span lang="zh">改善暗沉，同时强化肌肤屏障</span></li><li><b><span lang="en">Allantoin</span><span lang="zh">尿囊素</span></b><span lang="en">Soothes dry, delicate skin</span><span lang="zh">舒缓敏感不适</span></li><li><b><span lang="en">Betaine</span><span lang="zh">甜菜碱</span></b><span lang="en">Lasting hydration without heaviness</span><span lang="zh">深层保湿，长时间水润</span></li><li><b><span lang="en">Lactobacillus Ferment</span><span lang="zh">乳酸菌发酵产物</span></b><span lang="en">A balanced, healthy-looking skin environment</span><span lang="zh">维持肌肤健康稳定</span></li><li><b><span lang="en">7 botanicals</span><span lang="zh">七重植萃</span></b><span lang="en">Including chamomile, centella, green tea and licorice</span><span lang="zh">包括洋甘菊、积雪草、绿茶、甘草</span></li></ol></li>
-        <li class="gcard gcard--list gcard--tint"><span class="gcard__n"><span lang="en">How it works</span><span lang="zh">三重修护机制</span></span><h4><span lang="en">Hydrate, restore, repair</span><span lang="zh">补水、焕亮、修护</span></h4><ol class="gcard__plan"><li><b><span lang="en">Hydrate</span><span lang="zh">深层补水</span></b><span lang="en">Replenishes moisture for softer, smoother skin</span><span lang="zh">迅速补充水分，改善干燥粗糙</span></li><li><b><span lang="en">Radiance</span><span lang="zh">焕亮光采</span></b><span lang="en">Reveals smoother, radiant-looking skin</span><span lang="zh">帮助肌肤恢复自然健康光泽</span></li><li><b><span lang="en">Repair</span><span lang="zh">屏障修护</span></b><span lang="en">Supports the skin barrier and comfort</span><span lang="zh">帮助强化肌肤屏障，舒缓不适</span></li></ol></li>
-        <li class="gcard gcard--list"><span class="gcard__n"><span lang="en">Why you’ll love it</span><span lang="zh">为什么选择 Radiance Velvet</span></span><h4><span lang="en">Soft, smooth and comfortable all day</span><span lang="zh">全天柔润舒适</span></h4><ul class="gcard__ticks"><li><span lang="en">Long-lasting hydration for supple skin</span><span lang="zh">全天长效保湿</span></li><li><span lang="en">Soothes and comforts with botanical extracts</span><span lang="zh">七种植物精萃温和舒缓</span></li><li><span lang="en">Helps reveal brighter-looking skin</span><span lang="zh">改善暗沉，提升光泽</span></li><li><span lang="en">Supports a stronger skin barrier</span><span lang="zh">强化肌肤屏障</span></li><li><span lang="en">Lightweight, fast-absorbing, not sticky</span><span lang="zh">轻盈易吸收，不黏腻</span></li></ul></li>
-        <li class="gcard gcard--list gcard--tint"><span class="gcard__n"><span lang="en">How to use</span><span lang="zh">使用方式</span></span><h4><span lang="en">After every shower</span><span lang="zh">沐浴后使用</span></h4><ol class="gcard__plan"><li><b>1</b><span lang="en">Pat skin dry after showering</span><span lang="zh">沐浴后轻轻擦干身体</span></li><li><b>2</b><span lang="en">Apply evenly over the body</span><span lang="zh">取适量均匀涂抹全身</span></li><li><b>3</b><span lang="en">Massage gently until absorbed</span><span lang="zh">轻柔按摩至完全吸收</span></li><li><b>4</b><span lang="en">Use morning and evening for best results</span><span lang="zh">建议每日早晚使用</span></li></ol></li>
-      </ol>
-    </article>
-    <article class="article article--guide" id="livra-intimate">
-      <div><p class="label muted">04 · <span lang="en">INTIMATE CARE</span><span lang="zh">私密护理</span></p><h2 style="margin-top:.6rem">LIVRA Intimate</h2><p class="muted" style="margin-top:.8rem;max-width:60ch"><span lang="en">A gentle foam wash for feminine intimate care, with botanical extracts and probiotic ferment to cleanse, soothe and support a healthy pH balance.</span><span lang="zh">专为女性私密肌肤设计的温和泡沫洁净液，结合植物萃取与益生菌发酵成分，温和洁净、舒缓不适、维持健康酸碱平衡。</span></p></div>
-      <ol class="guide guide--wide" aria-label="Product guide">
-        <li class="gcard gcard--cover"><span class="gcard__k">LIVRA · <span lang="en">Intimate care</span><span lang="zh">私密护理</span></span><h4><span lang="en">Restore intimate balance</span><span lang="zh">温柔呵护，找回自然平衡</span></h4><p><span lang="en">Gentle cleansing · soothing · rebalancing</span><span lang="zh">温和洁净 × 舒缓修护 × 平衡呵护</span></p><span class="gcard__swipe"><span lang="en">Rebalancing Cloud Foam · 150 ml</span><span lang="zh">平衡云朵泡泡 · 150 ml</span> · <span lang="en">swipe</span><span lang="zh">左右滑动</span> →</span><span class="gcard__orb" aria-hidden="true"></span><span class="gcard__orb gcard__orb--2" aria-hidden="true"></span></li>
-        <li class="gcard gcard--list gcard--tint"><span class="gcard__n"><span lang="en">Common concerns</span><span lang="zh">常见私密困扰</span></span><h4><span lang="en">Everyday comfort matters</span><span lang="zh">每天的舒适最重要</span></h4><ul class="gcard__ticks"><li><span lang="en">Unpleasant odour, excess discharge</span><span lang="zh">异味、分泌物增多</span></li><li><span lang="en">Dryness, sensitivity, itchiness</span><span lang="zh">干燥、敏感、搔痒</span></li><li><span lang="en">pH imbalance</span><span lang="zh">pH 失衡导致不适</span></li><li><span lang="en">Discomfort before and after menstruation</span><span lang="zh">经期前后容易敏感</span></li></ul></li>
-        <li class="gcard gcard--list"><span class="gcard__n"><span lang="en">How it works</span><span lang="zh">作用机制</span></span><h4><span lang="en">Kacip Fatimah, Manjakani, Sireh and more</span><span lang="zh">Kacip Fatimah、Manjakani、Sireh 等核心成分</span></h4><ol class="gcard__plan"><li><b><span lang="en">Botanical surfactants</span><span lang="zh">天然洁净因子</span></b><span lang="en">Wash away sweat and discharge</span><span lang="zh">带走汗水与分泌物</span></li><li><b><span lang="en">Sireh</span><span lang="zh">蒌叶</span></b><span lang="en">Natural antibacterial; targets the source of odour</span><span lang="zh">天然抗菌，抑制异味来源</span></li><li><b><span lang="en">Manjakani</span><span lang="zh">没食子</span></b><span lang="en">Astringent; helps restore elasticity</span><span lang="zh">收敛，帮助恢复弹性</span></li><li><b><span lang="en">Allantoin + Sorbus</span><span lang="zh">尿囊素 + 花楸</span></b><span lang="en">Soothes and moisturises</span><span lang="zh">舒缓保湿，减少敏感</span></li><li><b><span lang="en">Lactobacillus Ferment</span><span lang="zh">益生菌发酵物</span></b><span lang="en">Maintains a healthy acidic environment</span><span lang="zh">维持健康酸性环境</span></li></ol></li>
-        <li class="gcard gcard--list"><span class="gcard__n"><span lang="en">Key benefits</span><span lang="zh">核心功效</span></span><h4><span lang="en">Fresh, comfortable, confident</span><span lang="zh">清新、舒适、自在</span></h4><ul class="gcard__ticks"><li><span lang="en">Gentle daily cleansing</span><span lang="zh">温和洁净，保持每日清爽</span></li><li><span lang="en">Firming and toning</span><span lang="zh">提升弹性，紧致肌肤</span></li><li><span lang="en">Moisturising and soothing</span><span lang="zh">深层保湿，修护敏感</span></li><li><span lang="en">Odour control</span><span lang="zh">减少异味，维持清新</span></li><li><span lang="en">pH support</span><span lang="zh">平衡酸碱，守护健康</span></li><li><span lang="en">Soothing relief</span><span lang="zh">舒缓不适，带来安心感</span></li></ul></li>
-        <li class="gcard gcard--list gcard--tint"><span class="gcard__n"><span lang="en">Ideal for women who</span><span lang="zh">推荐给这样的你</span></span><h4><span lang="en">Made for everyday life</span><span lang="zh">为日常生活而设计</span></h4><ul class="gcard__ticks"><li><span lang="en">Experience odour or excess discharge</span><span lang="zh">想减少异味与分泌物</span></li><li><span lang="en">Have dryness or sensitivity</span><span lang="zh">私密处干燥或搔痒</span></li><li><span lang="en">Feel discomfort around menstruation</span><span lang="zh">经期前后容易敏感</span></li><li><span lang="en">Exercise and sweat regularly</span><span lang="zh">经常运动、流汗</span></li><li><span lang="en">Sit for long hours</span><span lang="zh">久坐上班族</span></li></ul></li>
-        <li class="gcard gcard--list gcard--tint"><span class="gcard__n"><span lang="en">How to use</span><span lang="zh">使用方式</span></span><h4><span lang="en">Once or twice daily</span><span lang="zh">每日使用 1–2 次</span></h4><ol class="gcard__plan"><li><b>1</b><span lang="en">Wet the intimate area with water</span><span lang="zh">以清水湿润私密部位</span></li><li><b>2</b><span lang="en">Dispense a small amount onto your palm</span><span lang="zh">取适量于掌心</span></li><li><b>3</b><span lang="en">Cleanse gently for 10–15 seconds</span><span lang="zh">轻柔清洗约 10–15 秒</span></li><li><b>4</b><span lang="en">Rinse thoroughly with clean water</span><span lang="zh">以清水彻底冲洗</span></li><li><b>5</b><span lang="en">Pat dry with a clean towel</span><span lang="zh">用干净毛巾轻轻擦干</span></li></ol></li>
-      </ol>
-    </article>
-    <article class="article article--guide" id="livra-essence">
-      <div><p class="label muted">05 · <span lang="en">ESSENCE</span><span lang="zh">精华</span></p><h2 style="margin-top:.6rem">LIVRA Essence</h2><p class="muted" style="margin-top:.8rem;max-width:60ch"><span lang="en">Revitalize Essence is a warm, water-soluble massage essence oil with marine and plant extracts. It melts into the skin, relaxes the body and rinses off without a greasy residue.</span><span lang="zh">Revitalize Essence 是一款水溶性温热按摩精华油，结合海藻与植物萃取，舒缓身心、柔亮肌肤，轻松冲洗不油腻。</span></p></div>
-      <ol class="guide guide--wide" aria-label="Product guide">
-        <li class="gcard gcard--cover"><span class="gcard__k">LIVRA · <span lang="en">Revitalize Essence</span><span lang="zh">Revitalize Essence</span></span><h4><span lang="en">Reawaken body, restore inner harmony</span><span lang="zh">重启身心，焕活内在</span></h4><p><span lang="en">Plant energy · marine extracts · warming comfort</span><span lang="zh">植物能量 · 海洋萃取 · 温热舒缓</span></p><span class="gcard__swipe"><span lang="en">300 g</span><span lang="zh">300 g</span> · <span lang="en">swipe</span><span lang="zh">左右滑动</span> →</span><span class="gcard__orb" aria-hidden="true"></span><span class="gcard__orb gcard__orb--2" aria-hidden="true"></span></li>
-        <li class="gcard gcard--list gcard--tint"><span class="gcard__n"><span lang="en">Common concerns</span><span lang="zh">常见困扰</span></span><h4><span lang="en">A massage oil that rinses clean</span><span lang="zh">不油腻、好冲洗的按摩精华油</span></h4><ul class="gcard__ticks"><li><span lang="en">Dry, rough skin</span><span lang="zh">肌肤干燥、粗糙</span></li><li><span lang="en">Dullness and lack of radiance</span><span lang="zh">暗沉、缺乏光泽</span></li><li><span lang="en">Body tension and stress build-up</span><span lang="zh">身体紧绷、压力累积</span></li><li><span lang="en">Massage oils that are greasy and hard to wash off</span><span lang="zh">按摩油太油腻、难清洗</span></li></ul></li>
-        <li class="gcard gcard--list"><span class="gcard__n"><span lang="en">Key ingredients</span><span lang="zh">核心成分</span></span><h4><span lang="en">Marine botanicals, warm comfort</span><span lang="zh">海洋植萃，温热呵护</span></h4><ol class="gcard__plan"><li><b><span lang="en">Fucus · Laminaria · Ascophyllum</span><span lang="zh">海藻三重复合</span></b><span lang="en">Hydration, softness, glow</span><span lang="zh">保湿、柔嫩、亮肤</span></li><li><b><span lang="en">Chamomile &amp; Licorice</span><span lang="zh">洋甘菊 &amp; 甘草</span></b><span lang="en">Soothe and calm the skin</span><span lang="zh">舒缓敏感、安抚肌肤</span></li><li><b><span lang="en">Spirulina &amp; Cucumber</span><span lang="zh">螺旋藻 &amp; 黄瓜</span></b><span lang="en">Hydrate, repair, add radiance</span><span lang="zh">补水、修护、提升光泽</span></li><li><b><span lang="en">Horse chestnut</span><span lang="zh">欧洲七叶树</span></b><span lang="en">Microcirculation, firmness, less puffiness</span><span lang="zh">促进微循环、紧致、改善水肿</span></li></ol></li>
-        <li class="gcard gcard--list"><span class="gcard__n"><span lang="en">Key benefits</span><span lang="zh">核心功效</span></span><h4><span lang="en">Hydrate, soothe, brighten, relax</span><span lang="zh">保湿、舒缓、亮肤、放松</span></h4><ul class="gcard__ticks"><li><span lang="en">Deep hydration for soft skin</span><span lang="zh">深层保湿，柔软细腻</span></li><li><span lang="en">Gentle warmth that relaxes</span><span lang="zh">温和暖感，放松身心</span></li><li><span lang="en">Non-greasy and easy to rinse</span><span lang="zh">不油腻、易冲洗</span></li><li><span lang="en">Silky, brighter-looking skin</span><span lang="zh">亮肤柔滑</span></li><li><span lang="en">Firming and anti-puffiness care</span><span lang="zh">紧致提升，减轻浮肿</span></li></ul></li>
-        <li class="gcard gcard--list gcard--tint"><span class="gcard__n"><span lang="en">Who it’s for</span><span lang="zh">专为您的需求而设计</span></span><h4><span lang="en">Perfect if you want</span><span lang="zh">适合想要</span></h4><ul class="gcard__ticks"><li><span lang="en">To unwind and release stress</span><span lang="zh">放松身心、舒缓压力</span></li><li><span lang="en">Hydration for dry or rough skin</span><span lang="zh">改善干燥粗糙肌肤</span></li><li><span lang="en">A clean-rinse, lightweight massage</span><span lang="zh">不油腻、好冲洗的按摩</span></li><li><span lang="en">Smooth, radiant everyday body care</span><span lang="zh">日常身体保养与亮肤</span></li></ul></li>
-        <li class="gcard gcard--list gcard--tint"><span class="gcard__n"><span lang="en">How to use</span><span lang="zh">使用方式</span></span><h4><span lang="en">Your revitalizing ritual</span><span lang="zh">身体焕活护理</span></h4><ol class="gcard__plan"><li><b>1</b><span lang="en">Apply an appropriate amount to the body</span><span lang="zh">取适量均匀涂抹于身体</span></li><li><b>2</b><span lang="en">Massage gently with slow, deep strokes</span><span lang="zh">以轻柔的按摩手法促进吸收</span></li><li><b>3</b><span lang="en">Enjoy the comforting warmth</span><span lang="zh">感受温热包覆与丝滑触感</span></li><li><b>4</b><span lang="en">Rinse thoroughly with water</span><span lang="zh">以清水冲洗干净</span></li></ol><p class="gcard__note"><span lang="en">Daily use recommended for relaxation and radiance.</span><span lang="zh">建议每日使用，放松与焕亮。</span></p></li>
-      </ol>
-    </article>
-    <div class="article" style="grid-template-columns:1fr">
-      <p class="lede"><span lang="en">Shop LIVRA in the Liora app and earn 1 LP for every RM 1.</span><span lang="zh">在 Liora App 选购 LIVRA，每消费 RM 1 赚取 1 LP。</span> <a class="link-arrow" href="#join"><span lang="en">Get the app</span><span lang="zh">下载 App</span> →</a></p>
-    </div>
+</section>
+
+<!-- LIVRA · regrow -->
+<section class="view" id="livra-regrow">
+  <div class="wrap lp">
+    <aside class="lp__info">
+      <p class="crumbs"><a href="#livra">LIVRA</a> <span aria-hidden="true">/</span> <span lang="en">SCALP &amp; HAIR</span><span lang="zh">头皮与秀发</span></p>
+      <p class="eyebrow" style="margin-top:1.2rem">01 · <span lang="en">SCALP &amp; HAIR</span><span lang="zh">头皮与秀发</span></p>
+      <h1>LIVRA Regrow &amp; Replenish</h1>
+      <p class="lede"><span lang="en">Botanical science for a complete hair recovery ritual: a shampoo to purify the scalp and a conditioner to repair the hair.</span><span lang="zh">植物修护 × 科学配方，打造完整头皮护理仪式：洗发露净澈头皮，护发素修护发丝。</span></p>
+      <ul class="lcard__tags"><li><span lang="en">Purifies the scalp</span><span lang="zh">净澈头皮</span></li><li><span lang="en">Strengthens roots</span><span lang="zh">强韧发根</span></li><li><span lang="en">Repairs and smooths</span><span lang="zh">修护柔顺</span></li></ul>
+      <div class="lp__cta">
+        <a class="btn" href="#join"><span lang="en">Shop in the Liora app</span><span lang="zh">在 Liora App 选购</span></a>
+        <p class="muted"><span lang="en">Every RM 1 earns 1 LP.</span><span lang="zh">每消费 RM 1 赚取 1 LP。</span></p>
+      </div>
+      <nav class="lp__more" aria-label="More LIVRA products">
+        <a href="#livra-cleanser">← LIVRA Recode Cleanser</a>
+        <a href="#livra-body">LIVRA Body Series ALL in 1 →</a>
+      </nav>
+    </aside>
+    <ol class="lp__cards" aria-label="LIVRA Regrow &amp; Replenish product guide">
+          <li><img loading="eager" src="assets/img/regrow/slide-01.jpg" width="900" height="1600" alt="LIVRA Regrow &amp; Replenish guide, card 1 of 13" data-alt-en="LIVRA Regrow &amp; Replenish guide, card 1 of 13" data-alt-zh="LIVRA Regrow &amp; Replenish 产品介绍，第 1 张，共 13 张"></li>
+          <li><img loading="lazy" src="assets/img/regrow/slide-02.jpg" width="900" height="1600" alt="LIVRA Regrow &amp; Replenish guide, card 2 of 13" data-alt-en="LIVRA Regrow &amp; Replenish guide, card 2 of 13" data-alt-zh="LIVRA Regrow &amp; Replenish 产品介绍，第 2 张，共 13 张"></li>
+          <li><img loading="lazy" src="assets/img/regrow/slide-03.jpg" width="900" height="1600" alt="LIVRA Regrow &amp; Replenish guide, card 3 of 13" data-alt-en="LIVRA Regrow &amp; Replenish guide, card 3 of 13" data-alt-zh="LIVRA Regrow &amp; Replenish 产品介绍，第 3 张，共 13 张"></li>
+          <li><img loading="lazy" src="assets/img/regrow/slide-04.jpg" width="900" height="1600" alt="LIVRA Regrow &amp; Replenish guide, card 4 of 13" data-alt-en="LIVRA Regrow &amp; Replenish guide, card 4 of 13" data-alt-zh="LIVRA Regrow &amp; Replenish 产品介绍，第 4 张，共 13 张"></li>
+          <li><img loading="lazy" src="assets/img/regrow/slide-05.jpg" width="900" height="1600" alt="LIVRA Regrow &amp; Replenish guide, card 5 of 13" data-alt-en="LIVRA Regrow &amp; Replenish guide, card 5 of 13" data-alt-zh="LIVRA Regrow &amp; Replenish 产品介绍，第 5 张，共 13 张"></li>
+          <li><img loading="lazy" src="assets/img/regrow/slide-06.jpg" width="900" height="1600" alt="LIVRA Regrow &amp; Replenish guide, card 6 of 13" data-alt-en="LIVRA Regrow &amp; Replenish guide, card 6 of 13" data-alt-zh="LIVRA Regrow &amp; Replenish 产品介绍，第 6 张，共 13 张"></li>
+          <li><img loading="lazy" src="assets/img/regrow/slide-07.jpg" width="900" height="1600" alt="LIVRA Regrow &amp; Replenish guide, card 7 of 13" data-alt-en="LIVRA Regrow &amp; Replenish guide, card 7 of 13" data-alt-zh="LIVRA Regrow &amp; Replenish 产品介绍，第 7 张，共 13 张"></li>
+          <li><img loading="lazy" src="assets/img/regrow/slide-08.jpg" width="900" height="1600" alt="LIVRA Regrow &amp; Replenish guide, card 8 of 13" data-alt-en="LIVRA Regrow &amp; Replenish guide, card 8 of 13" data-alt-zh="LIVRA Regrow &amp; Replenish 产品介绍，第 8 张，共 13 张"></li>
+          <li><img loading="lazy" src="assets/img/regrow/slide-09.jpg" width="900" height="1600" alt="LIVRA Regrow &amp; Replenish guide, card 9 of 13" data-alt-en="LIVRA Regrow &amp; Replenish guide, card 9 of 13" data-alt-zh="LIVRA Regrow &amp; Replenish 产品介绍，第 9 张，共 13 张"></li>
+          <li><img loading="lazy" src="assets/img/regrow/slide-10.jpg" width="900" height="1600" alt="LIVRA Regrow &amp; Replenish guide, card 10 of 13" data-alt-en="LIVRA Regrow &amp; Replenish guide, card 10 of 13" data-alt-zh="LIVRA Regrow &amp; Replenish 产品介绍，第 10 张，共 13 张"></li>
+          <li><img loading="lazy" src="assets/img/regrow/slide-11.jpg" width="900" height="1600" alt="LIVRA Regrow &amp; Replenish guide, card 11 of 13" data-alt-en="LIVRA Regrow &amp; Replenish guide, card 11 of 13" data-alt-zh="LIVRA Regrow &amp; Replenish 产品介绍，第 11 张，共 13 张"></li>
+          <li><img loading="lazy" src="assets/img/regrow/slide-12.jpg" width="900" height="1600" alt="LIVRA Regrow &amp; Replenish guide, card 12 of 13" data-alt-en="LIVRA Regrow &amp; Replenish guide, card 12 of 13" data-alt-zh="LIVRA Regrow &amp; Replenish 产品介绍，第 12 张，共 13 张"></li>
+          <li><img loading="lazy" src="assets/img/regrow/slide-13.jpg" width="900" height="1600" alt="LIVRA Regrow &amp; Replenish guide, card 13 of 13" data-alt-en="LIVRA Regrow &amp; Replenish guide, card 13 of 13" data-alt-zh="LIVRA Regrow &amp; Replenish 产品介绍，第 13 张，共 13 张"></li>
+    </ol>
+  </div>
+</section>
+
+<!-- LIVRA · body -->
+<section class="view" id="livra-body">
+  <div class="wrap lp">
+    <aside class="lp__info">
+      <p class="crumbs"><a href="#livra">LIVRA</a> <span aria-hidden="true">/</span> <span lang="en">BODY CARE</span><span lang="zh">全身护理</span></p>
+      <p class="eyebrow" style="margin-top:1.2rem">02 · <span lang="en">BODY CARE</span><span lang="zh">全身护理</span></p>
+      <h1>LIVRA Body Series ALL in 1</h1>
+      <p class="lede"><span lang="en">A gentle blend of botanical therapy and science to reconnect your body, skin and emotional balance. Four products, four wellness moments.</span><span lang="zh">透过植物疗愈与科学调理，让身体、肌肤与情绪重新回到平衡。四款产品，四种疗愈时刻。</span></p>
+      <ul class="lcard__tags"><li><span lang="en">Botanical therapy</span><span lang="zh">植物疗愈</span></li><li><span lang="en">Morning to evening</span><span lang="zh">从早到晚</span></li><li><span lang="en">Body, skin and mood</span><span lang="zh">身体 · 肌肤 · 情绪</span></li></ul>
+      <div class="lp__cta">
+        <a class="btn" href="#join"><span lang="en">Shop in the Liora app</span><span lang="zh">在 Liora App 选购</span></a>
+        <p class="muted"><span lang="en">Every RM 1 earns 1 LP.</span><span lang="zh">每消费 RM 1 赚取 1 LP。</span></p>
+      </div>
+      <nav class="lp__more" aria-label="More LIVRA products">
+        <a href="#livra-regrow">← LIVRA Regrow &amp; Replenish</a>
+        <a href="#livra-velvet">LIVRA Radiance Velvet →</a>
+      </nav>
+    </aside>
+    <ol class="lp__cards" aria-label="LIVRA Body Series ALL in 1 product guide">
+          <li><img loading="eager" src="assets/img/body/slide-01.jpg" width="900" height="1600" alt="LIVRA Body Series ALL in 1 guide, card 1 of 12" data-alt-en="LIVRA Body Series ALL in 1 guide, card 1 of 12" data-alt-zh="LIVRA Body Series ALL in 1 产品介绍，第 1 张，共 12 张"></li>
+          <li><img loading="lazy" src="assets/img/body/slide-02.jpg" width="900" height="1600" alt="LIVRA Body Series ALL in 1 guide, card 2 of 12" data-alt-en="LIVRA Body Series ALL in 1 guide, card 2 of 12" data-alt-zh="LIVRA Body Series ALL in 1 产品介绍，第 2 张，共 12 张"></li>
+          <li><img loading="lazy" src="assets/img/body/slide-03.jpg" width="900" height="1600" alt="LIVRA Body Series ALL in 1 guide, card 3 of 12" data-alt-en="LIVRA Body Series ALL in 1 guide, card 3 of 12" data-alt-zh="LIVRA Body Series ALL in 1 产品介绍，第 3 张，共 12 张"></li>
+          <li><img loading="lazy" src="assets/img/body/slide-04.jpg" width="900" height="1600" alt="LIVRA Body Series ALL in 1 guide, card 4 of 12" data-alt-en="LIVRA Body Series ALL in 1 guide, card 4 of 12" data-alt-zh="LIVRA Body Series ALL in 1 产品介绍，第 4 张，共 12 张"></li>
+          <li><img loading="lazy" src="assets/img/body/slide-05.jpg" width="900" height="1600" alt="LIVRA Body Series ALL in 1 guide, card 5 of 12" data-alt-en="LIVRA Body Series ALL in 1 guide, card 5 of 12" data-alt-zh="LIVRA Body Series ALL in 1 产品介绍，第 5 张，共 12 张"></li>
+          <li><img loading="lazy" src="assets/img/body/slide-06.jpg" width="900" height="1600" alt="LIVRA Body Series ALL in 1 guide, card 6 of 12" data-alt-en="LIVRA Body Series ALL in 1 guide, card 6 of 12" data-alt-zh="LIVRA Body Series ALL in 1 产品介绍，第 6 张，共 12 张"></li>
+          <li><img loading="lazy" src="assets/img/body/slide-07.jpg" width="900" height="1600" alt="LIVRA Body Series ALL in 1 guide, card 7 of 12" data-alt-en="LIVRA Body Series ALL in 1 guide, card 7 of 12" data-alt-zh="LIVRA Body Series ALL in 1 产品介绍，第 7 张，共 12 张"></li>
+          <li><img loading="lazy" src="assets/img/body/slide-08.jpg" width="900" height="1600" alt="LIVRA Body Series ALL in 1 guide, card 8 of 12" data-alt-en="LIVRA Body Series ALL in 1 guide, card 8 of 12" data-alt-zh="LIVRA Body Series ALL in 1 产品介绍，第 8 张，共 12 张"></li>
+          <li><img loading="lazy" src="assets/img/body/slide-09.jpg" width="900" height="1600" alt="LIVRA Body Series ALL in 1 guide, card 9 of 12" data-alt-en="LIVRA Body Series ALL in 1 guide, card 9 of 12" data-alt-zh="LIVRA Body Series ALL in 1 产品介绍，第 9 张，共 12 张"></li>
+          <li><img loading="lazy" src="assets/img/body/slide-10.jpg" width="900" height="1600" alt="LIVRA Body Series ALL in 1 guide, card 10 of 12" data-alt-en="LIVRA Body Series ALL in 1 guide, card 10 of 12" data-alt-zh="LIVRA Body Series ALL in 1 产品介绍，第 10 张，共 12 张"></li>
+          <li><img loading="lazy" src="assets/img/body/slide-11.jpg" width="900" height="1600" alt="LIVRA Body Series ALL in 1 guide, card 11 of 12" data-alt-en="LIVRA Body Series ALL in 1 guide, card 11 of 12" data-alt-zh="LIVRA Body Series ALL in 1 产品介绍，第 11 张，共 12 张"></li>
+          <li><img loading="lazy" src="assets/img/body/slide-12.jpg" width="900" height="1600" alt="LIVRA Body Series ALL in 1 guide, card 12 of 12" data-alt-en="LIVRA Body Series ALL in 1 guide, card 12 of 12" data-alt-zh="LIVRA Body Series ALL in 1 产品介绍，第 12 张，共 12 张"></li>
+    </ol>
+  </div>
+</section>
+
+<!-- LIVRA · velvet -->
+<section class="view" id="livra-velvet">
+  <div class="wrap lp">
+    <aside class="lp__info">
+      <p class="crumbs"><a href="#livra">LIVRA</a> <span aria-hidden="true">/</span> <span lang="en">SKIN RADIANCE</span><span lang="zh">肌肤光采</span></p>
+      <p class="eyebrow" style="margin-top:1.2rem">03 · <span lang="en">SKIN RADIANCE</span><span lang="zh">肌肤光采</span></p>
+      <h1>LIVRA Radiance Velvet</h1>
+      <p class="lede"><span lang="en">A body lotion for deep hydration, barrier repair and natural radiance, with a lightweight, fast-absorbing texture.</span><span lang="zh">深层保湿 · 屏障修护 · 自然焕亮的身体乳，质地轻盈易吸收。</span></p>
+      <ul class="lcard__tags"><li><span lang="en">Deep hydration</span><span lang="zh">深层保湿</span></li><li><span lang="en">Barrier repair</span><span lang="zh">屏障修护</span></li><li><span lang="en">Natural radiance</span><span lang="zh">自然焕亮</span></li></ul>
+      <div class="lp__cta">
+        <a class="btn" href="#join"><span lang="en">Shop in the Liora app</span><span lang="zh">在 Liora App 选购</span></a>
+        <p class="muted"><span lang="en">Every RM 1 earns 1 LP.</span><span lang="zh">每消费 RM 1 赚取 1 LP。</span></p>
+      </div>
+      <nav class="lp__more" aria-label="More LIVRA products">
+        <a href="#livra-body">← LIVRA Body Series ALL in 1</a>
+        <a href="#livra-intimate">LIVRA Rebalancing Intimate →</a>
+      </nav>
+    </aside>
+    <ol class="lp__cards" aria-label="LIVRA Radiance Velvet product guide">
+          <li><img loading="eager" src="assets/img/velvet/slide-01.jpg" width="900" height="1600" alt="LIVRA Radiance Velvet guide, card 1 of 8" data-alt-en="LIVRA Radiance Velvet guide, card 1 of 8" data-alt-zh="LIVRA Radiance Velvet 产品介绍，第 1 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/velvet/slide-02.jpg" width="900" height="1600" alt="LIVRA Radiance Velvet guide, card 2 of 8" data-alt-en="LIVRA Radiance Velvet guide, card 2 of 8" data-alt-zh="LIVRA Radiance Velvet 产品介绍，第 2 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/velvet/slide-03.jpg" width="900" height="1600" alt="LIVRA Radiance Velvet guide, card 3 of 8" data-alt-en="LIVRA Radiance Velvet guide, card 3 of 8" data-alt-zh="LIVRA Radiance Velvet 产品介绍，第 3 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/velvet/slide-04.jpg" width="900" height="1600" alt="LIVRA Radiance Velvet guide, card 4 of 8" data-alt-en="LIVRA Radiance Velvet guide, card 4 of 8" data-alt-zh="LIVRA Radiance Velvet 产品介绍，第 4 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/velvet/slide-05.jpg" width="900" height="1600" alt="LIVRA Radiance Velvet guide, card 5 of 8" data-alt-en="LIVRA Radiance Velvet guide, card 5 of 8" data-alt-zh="LIVRA Radiance Velvet 产品介绍，第 5 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/velvet/slide-06.jpg" width="900" height="1600" alt="LIVRA Radiance Velvet guide, card 6 of 8" data-alt-en="LIVRA Radiance Velvet guide, card 6 of 8" data-alt-zh="LIVRA Radiance Velvet 产品介绍，第 6 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/velvet/slide-07.jpg" width="900" height="1600" alt="LIVRA Radiance Velvet guide, card 7 of 8" data-alt-en="LIVRA Radiance Velvet guide, card 7 of 8" data-alt-zh="LIVRA Radiance Velvet 产品介绍，第 7 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/velvet/slide-08.jpg" width="900" height="1600" alt="LIVRA Radiance Velvet guide, card 8 of 8" data-alt-en="LIVRA Radiance Velvet guide, card 8 of 8" data-alt-zh="LIVRA Radiance Velvet 产品介绍，第 8 张，共 8 张"></li>
+    </ol>
+  </div>
+</section>
+
+<!-- LIVRA · intimate -->
+<section class="view" id="livra-intimate">
+  <div class="wrap lp">
+    <aside class="lp__info">
+      <p class="crumbs"><a href="#livra">LIVRA</a> <span aria-hidden="true">/</span> <span lang="en">INTIMATE CARE</span><span lang="zh">私密护理</span></p>
+      <p class="eyebrow" style="margin-top:1.2rem">04 · <span lang="en">INTIMATE CARE</span><span lang="zh">私密护理</span></p>
+      <h1>LIVRA Rebalancing Intimate</h1>
+      <p class="lede"><span lang="en">A gentle foam wash for feminine intimate care, with botanical extracts and probiotic ferment to cleanse, soothe and support a healthy pH balance.</span><span lang="zh">专为女性私密肌肤设计的温和泡沫洁净液，结合植物萃取与益生菌发酵成分，温和洁净、舒缓不适、维持健康酸碱平衡。</span></p>
+      <ul class="lcard__tags"><li><span lang="en">Gentle cleansing</span><span lang="zh">温和洁净</span></li><li><span lang="en">Soothing comfort</span><span lang="zh">舒缓不适</span></li><li><span lang="en">Healthy pH balance</span><span lang="zh">酸碱平衡</span></li></ul>
+      <div class="lp__cta">
+        <a class="btn" href="#join"><span lang="en">Shop in the Liora app</span><span lang="zh">在 Liora App 选购</span></a>
+        <p class="muted"><span lang="en">Every RM 1 earns 1 LP.</span><span lang="zh">每消费 RM 1 赚取 1 LP。</span></p>
+      </div>
+      <nav class="lp__more" aria-label="More LIVRA products">
+        <a href="#livra-velvet">← LIVRA Radiance Velvet</a>
+        <a href="#livra-essence">LIVRA Revitalize Essence →</a>
+      </nav>
+    </aside>
+    <ol class="lp__cards" aria-label="LIVRA Rebalancing Intimate product guide">
+          <li><img loading="eager" src="assets/img/intimate/slide-01.jpg" width="900" height="1600" alt="LIVRA Rebalancing Intimate guide, card 1 of 8" data-alt-en="LIVRA Rebalancing Intimate guide, card 1 of 8" data-alt-zh="LIVRA Rebalancing Intimate 产品介绍，第 1 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/intimate/slide-02.jpg" width="900" height="1600" alt="LIVRA Rebalancing Intimate guide, card 2 of 8" data-alt-en="LIVRA Rebalancing Intimate guide, card 2 of 8" data-alt-zh="LIVRA Rebalancing Intimate 产品介绍，第 2 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/intimate/slide-03.jpg" width="900" height="1600" alt="LIVRA Rebalancing Intimate guide, card 3 of 8" data-alt-en="LIVRA Rebalancing Intimate guide, card 3 of 8" data-alt-zh="LIVRA Rebalancing Intimate 产品介绍，第 3 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/intimate/slide-04.jpg" width="900" height="1600" alt="LIVRA Rebalancing Intimate guide, card 4 of 8" data-alt-en="LIVRA Rebalancing Intimate guide, card 4 of 8" data-alt-zh="LIVRA Rebalancing Intimate 产品介绍，第 4 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/intimate/slide-05.jpg" width="900" height="1600" alt="LIVRA Rebalancing Intimate guide, card 5 of 8" data-alt-en="LIVRA Rebalancing Intimate guide, card 5 of 8" data-alt-zh="LIVRA Rebalancing Intimate 产品介绍，第 5 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/intimate/slide-06.jpg" width="900" height="1600" alt="LIVRA Rebalancing Intimate guide, card 6 of 8" data-alt-en="LIVRA Rebalancing Intimate guide, card 6 of 8" data-alt-zh="LIVRA Rebalancing Intimate 产品介绍，第 6 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/intimate/slide-07.jpg" width="900" height="1600" alt="LIVRA Rebalancing Intimate guide, card 7 of 8" data-alt-en="LIVRA Rebalancing Intimate guide, card 7 of 8" data-alt-zh="LIVRA Rebalancing Intimate 产品介绍，第 7 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/intimate/slide-08.jpg" width="900" height="1600" alt="LIVRA Rebalancing Intimate guide, card 8 of 8" data-alt-en="LIVRA Rebalancing Intimate guide, card 8 of 8" data-alt-zh="LIVRA Rebalancing Intimate 产品介绍，第 8 张，共 8 张"></li>
+    </ol>
+  </div>
+</section>
+
+<!-- LIVRA · essence -->
+<section class="view" id="livra-essence">
+  <div class="wrap lp">
+    <aside class="lp__info">
+      <p class="crumbs"><a href="#livra">LIVRA</a> <span aria-hidden="true">/</span> <span lang="en">BODY ESSENCE</span><span lang="zh">身体精华</span></p>
+      <p class="eyebrow" style="margin-top:1.2rem">05 · <span lang="en">BODY ESSENCE</span><span lang="zh">身体精华</span></p>
+      <h1>LIVRA Revitalize Essence</h1>
+      <p class="lede"><span lang="en">A warm, water-soluble massage essence oil with marine and plant extracts. It melts into the skin, relaxes the body and rinses off without a greasy residue.</span><span lang="zh">水溶性温热按摩精华油，结合海藻与植物萃取，舒缓身心、柔亮肌肤，轻松冲洗不油腻。</span></p>
+      <ul class="lcard__tags"><li><span lang="en">Warming massage</span><span lang="zh">温热按摩</span></li><li><span lang="en">Marine extracts</span><span lang="zh">海洋植萃</span></li><li><span lang="en">Rinses clean</span><span lang="zh">轻松冲洗</span></li></ul>
+      <div class="lp__cta">
+        <a class="btn" href="#join"><span lang="en">Shop in the Liora app</span><span lang="zh">在 Liora App 选购</span></a>
+        <p class="muted"><span lang="en">Every RM 1 earns 1 LP.</span><span lang="zh">每消费 RM 1 赚取 1 LP。</span></p>
+      </div>
+      <nav class="lp__more" aria-label="More LIVRA products">
+        <a href="#livra-intimate">← LIVRA Rebalancing Intimate</a>
+        <a href="#livra-cleanser">LIVRA Recode Cleanser →</a>
+      </nav>
+    </aside>
+    <ol class="lp__cards" aria-label="LIVRA Revitalize Essence product guide">
+          <li><img loading="eager" src="assets/img/essence/slide-01.jpg" width="900" height="1600" alt="LIVRA Revitalize Essence guide, card 1 of 8" data-alt-en="LIVRA Revitalize Essence guide, card 1 of 8" data-alt-zh="LIVRA Revitalize Essence 产品介绍，第 1 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/essence/slide-02.jpg" width="900" height="1600" alt="LIVRA Revitalize Essence guide, card 2 of 8" data-alt-en="LIVRA Revitalize Essence guide, card 2 of 8" data-alt-zh="LIVRA Revitalize Essence 产品介绍，第 2 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/essence/slide-03.jpg" width="900" height="1600" alt="LIVRA Revitalize Essence guide, card 3 of 8" data-alt-en="LIVRA Revitalize Essence guide, card 3 of 8" data-alt-zh="LIVRA Revitalize Essence 产品介绍，第 3 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/essence/slide-04.jpg" width="900" height="1600" alt="LIVRA Revitalize Essence guide, card 4 of 8" data-alt-en="LIVRA Revitalize Essence guide, card 4 of 8" data-alt-zh="LIVRA Revitalize Essence 产品介绍，第 4 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/essence/slide-05.jpg" width="900" height="1600" alt="LIVRA Revitalize Essence guide, card 5 of 8" data-alt-en="LIVRA Revitalize Essence guide, card 5 of 8" data-alt-zh="LIVRA Revitalize Essence 产品介绍，第 5 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/essence/slide-06.jpg" width="900" height="1600" alt="LIVRA Revitalize Essence guide, card 6 of 8" data-alt-en="LIVRA Revitalize Essence guide, card 6 of 8" data-alt-zh="LIVRA Revitalize Essence 产品介绍，第 6 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/essence/slide-07.jpg" width="900" height="1600" alt="LIVRA Revitalize Essence guide, card 7 of 8" data-alt-en="LIVRA Revitalize Essence guide, card 7 of 8" data-alt-zh="LIVRA Revitalize Essence 产品介绍，第 7 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/essence/slide-08.jpg" width="900" height="1600" alt="LIVRA Revitalize Essence guide, card 8 of 8" data-alt-en="LIVRA Revitalize Essence guide, card 8 of 8" data-alt-zh="LIVRA Revitalize Essence 产品介绍，第 8 张，共 8 张"></li>
+    </ol>
+  </div>
+</section>
+
+<!-- LIVRA · cleanser -->
+<section class="view" id="livra-cleanser">
+  <div class="wrap lp">
+    <aside class="lp__info">
+      <p class="crumbs"><a href="#livra">LIVRA</a> <span aria-hidden="true">/</span> <span lang="en">FACE CARE</span><span lang="zh">面部护理</span></p>
+      <p class="eyebrow" style="margin-top:1.2rem">06 · <span lang="en">FACE CARE</span><span lang="zh">面部护理</span></p>
+      <h1>LIVRA Recode Cleanser</h1>
+      <p class="lede"><span lang="en">An amino-acid facial cleanser that cleanses gently, strengthens the skin barrier and keeps skin hydrated. Suitable for all skin types and never leaves skin tight.</span><span lang="zh">氨基酸洁面乳，温和洁净、强韧屏障、深层补水。适合所有肤质，洗后不紧绷。</span></p>
+      <ul class="lcard__tags"><li><span lang="en">Gentle amino-acid cleanse</span><span lang="zh">氨基酸温和洁净</span></li><li><span lang="en">Barrier strength</span><span lang="zh">强韧屏障</span></li><li><span lang="en">Non-drying</span><span lang="zh">洗后不紧绷</span></li></ul>
+      <div class="lp__cta">
+        <a class="btn" href="#join"><span lang="en">Shop in the Liora app</span><span lang="zh">在 Liora App 选购</span></a>
+        <p class="muted"><span lang="en">Every RM 1 earns 1 LP.</span><span lang="zh">每消费 RM 1 赚取 1 LP。</span></p>
+      </div>
+      <nav class="lp__more" aria-label="More LIVRA products">
+        <a href="#livra-essence">← LIVRA Revitalize Essence</a>
+        <a href="#livra-regrow">LIVRA Regrow &amp; Replenish →</a>
+      </nav>
+    </aside>
+    <ol class="lp__cards" aria-label="LIVRA Recode Cleanser product guide">
+          <li><img loading="eager" src="assets/img/cleanser/slide-01.jpg" width="900" height="1600" alt="LIVRA Recode Cleanser guide, card 1 of 8" data-alt-en="LIVRA Recode Cleanser guide, card 1 of 8" data-alt-zh="LIVRA Recode Cleanser 产品介绍，第 1 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/cleanser/slide-02.jpg" width="900" height="1600" alt="LIVRA Recode Cleanser guide, card 2 of 8" data-alt-en="LIVRA Recode Cleanser guide, card 2 of 8" data-alt-zh="LIVRA Recode Cleanser 产品介绍，第 2 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/cleanser/slide-03.jpg" width="900" height="1600" alt="LIVRA Recode Cleanser guide, card 3 of 8" data-alt-en="LIVRA Recode Cleanser guide, card 3 of 8" data-alt-zh="LIVRA Recode Cleanser 产品介绍，第 3 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/cleanser/slide-04.jpg" width="900" height="1600" alt="LIVRA Recode Cleanser guide, card 4 of 8" data-alt-en="LIVRA Recode Cleanser guide, card 4 of 8" data-alt-zh="LIVRA Recode Cleanser 产品介绍，第 4 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/cleanser/slide-05.jpg" width="900" height="1600" alt="LIVRA Recode Cleanser guide, card 5 of 8" data-alt-en="LIVRA Recode Cleanser guide, card 5 of 8" data-alt-zh="LIVRA Recode Cleanser 产品介绍，第 5 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/cleanser/slide-06.jpg" width="900" height="1600" alt="LIVRA Recode Cleanser guide, card 6 of 8" data-alt-en="LIVRA Recode Cleanser guide, card 6 of 8" data-alt-zh="LIVRA Recode Cleanser 产品介绍，第 6 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/cleanser/slide-07.jpg" width="900" height="1600" alt="LIVRA Recode Cleanser guide, card 7 of 8" data-alt-en="LIVRA Recode Cleanser guide, card 7 of 8" data-alt-zh="LIVRA Recode Cleanser 产品介绍，第 7 张，共 8 张"></li>
+          <li><img loading="lazy" src="assets/img/cleanser/slide-08.jpg" width="900" height="1600" alt="LIVRA Recode Cleanser guide, card 8 of 8" data-alt-en="LIVRA Recode Cleanser guide, card 8 of 8" data-alt-zh="LIVRA Recode Cleanser 产品介绍，第 8 张，共 8 张"></li>
+    </ol>
   </div>
 </section>
 

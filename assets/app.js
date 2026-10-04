@@ -47,15 +47,27 @@
     if (!view) { view = document.getElementById("home"); target = null; }
     views.forEach(function (v) { v.classList.toggle("is-active", v === view); });
     document.querySelectorAll(".nav a").forEach(function (a) {
-      if (a.getAttribute("href") === "#" + view.id) a.setAttribute("aria-current", "page");
+      var href = a.getAttribute("href");
+      var inLivra = view.id.indexOf("livra") === 0 && a.classList.contains("nav-group__top");
+      if (href === "#" + view.id || inLivra) a.setAttribute("aria-current", "page");
       else a.removeAttribute("aria-current");
     });
     nav.classList.remove("open");
+    var grp = document.querySelector(".nav-group");
+    if (grp && document.activeElement && grp.contains(document.activeElement)) document.activeElement.blur();
     if (target) { setTimeout(function () { target.scrollIntoView({ behavior: "smooth", block: "start" }); }, 30); }
     else window.scrollTo(0, 0);
   }
   window.addEventListener("hashchange", route);
   route();
+
+  var navGroup = document.querySelector(".nav-group");
+  if (navGroup) {
+    navGroup.querySelectorAll("a").forEach(function (a) {
+      a.addEventListener("click", function () { navGroup.classList.add("is-closing"); });
+    });
+    navGroup.addEventListener("mouseleave", function () { navGroup.classList.remove("is-closing"); });
+  }
 
   document.querySelector(".menu-btn").addEventListener("click", function () {
     var open = nav.classList.toggle("open");

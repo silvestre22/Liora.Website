@@ -548,3 +548,74 @@ details.more .gallery { margin-top: 14px; }
 
 /* ingredient lists without amounts */
 .dose--names li > span:first-child, .dose--names li > span[lang] { font-family: inherit; font-size: inherit; color: inherit; text-align: left; }
+
+/* full-slide guide images (Regrow & Replenish) */
+.guide--shots { grid-auto-columns: minmax(240px, 280px); }
+.gcard.gcard--img { min-height: 0; padding: 0; background: none; border: 1px solid var(--line); aspect-ratio: 9 / 16; }
+.gcard--img img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+/* ---------- LIVRA submenu ---------- */
+.nav-group { position: relative; display: flex; }
+.nav-group__top { display: inline-flex; align-items: center; gap: .35em; }
+.nav-group__top .caret { width: 12px; height: 12px; transition: transform .2s ease; }
+.subnav {
+  position: absolute; top: calc(100% + 6px); left: 50%; min-width: 250px; transform: translate(-50%, 6px);
+  display: flex; flex-direction: column; padding: 8px; border-radius: 16px;
+  background: var(--paper); border: 1px solid var(--line); box-shadow: 0 18px 40px -18px rgba(40, 20, 0, .35);
+  opacity: 0; visibility: hidden; transition: opacity .18s ease, transform .18s ease, visibility .18s; z-index: 60;
+}
+.subnav::before { content: ""; position: absolute; inset: -10px 0 auto; height: 10px; }
+.subnav a { border-radius: 10px; padding: .6em .85em; white-space: nowrap; }
+.subnav a:first-child { color: var(--accent-ink); font-weight: 600; border-bottom: 1px solid var(--line); border-radius: 10px 10px 0 0; margin-bottom: 4px; }
+.subnav a:hover, .subnav a[aria-current="page"] { background: var(--paper-2); color: var(--ink); }
+@media (min-width: 1021px) {
+  .nav-group:hover .subnav, .nav-group:focus-within .subnav { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+  .nav-group:hover .caret, .nav-group:focus-within .caret { transform: rotate(180deg); }
+}
+@media (max-width: 1020px) {
+  .nav-group { flex-direction: column; }
+  .nav-group__top .caret { display: none; }
+  .subnav { position: static; transform: none; opacity: 1; visibility: visible; min-width: 0; padding: 0 0 0 14px; border: 0; box-shadow: none; background: none; border-radius: 0; }
+  .subnav::before { display: none; }
+  .subnav a, .subnav a:first-child { font-size: .98rem; padding: .7em 0; border-radius: 0; margin: 0; border-bottom: 1px solid var(--line); font-weight: 400; color: var(--ink-soft); }
+  .subnav a:hover { background: none; }
+  .subnav a[aria-current="page"] { background: none; color: var(--accent-ink); }
+  .nav { max-height: calc(100vh - 68px); overflow-y: auto; }
+}
+
+/* ---------- LIVRA overview cards ---------- */
+.lgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); gap: 22px; margin-top: 20px; }
+.lcard { display: flex; flex-direction: column; text-decoration: none; color: inherit; border: 1px solid var(--line); border-radius: 22px; overflow: hidden; background: var(--card); transition: transform .2s ease, box-shadow .2s ease; }
+.lcard:hover { transform: translateY(-3px); box-shadow: 0 22px 44px -26px rgba(40, 20, 0, .45); }
+.lcard__img { aspect-ratio: 4 / 5; overflow: hidden; background: var(--paper-2); }
+.lcard__img img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; display: block; transition: transform .5s ease; }
+.lcard:hover .lcard__img img { transform: scale(1.03); }
+.lcard__body { display: flex; flex-direction: column; gap: 10px; padding: 22px 22px 24px; flex: 1; }
+.lcard__body h3 { font-size: var(--step-1); }
+.lcard__body .link-arrow { margin-top: auto; padding-top: 6px; }
+.lcard__tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.lcard__tags li { font-size: .8rem; padding: 5px 11px; border-radius: 999px; background: var(--accent-soft); color: var(--accent-ink); }
+
+/* ---------- LIVRA product pages ---------- */
+.lp { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 520px); gap: clamp(32px, 6vw, 88px); align-items: start; padding-block: clamp(36px, 6vw, 80px) 96px; }
+.lp__info { position: sticky; top: 100px; display: flex; flex-direction: column; gap: 1rem; }
+.lp__info h1 { font-size: clamp(2.2rem, 1.5rem + 2.8vw, 4rem); max-width: 14ch; }
+.crumbs { font-size: .85rem; color: var(--ink-soft); }
+.crumbs a { color: var(--accent-ink); text-decoration: none; font-weight: 600; }
+.lp__cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; margin-top: .6rem; }
+.lp__cta .muted { font-size: .9rem; }
+.lp__more { display: flex; flex-direction: column; gap: 8px; margin-top: 1.2rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }
+.lp__more a { color: var(--ink-soft); text-decoration: none; font-size: .92rem; }
+.lp__more a:hover { color: var(--accent-ink); }
+.lp__cards { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 18px; }
+.lp__cards li { border-radius: 20px; overflow: hidden; border: 1px solid var(--line); background: var(--paper-2); box-shadow: 0 20px 40px -30px rgba(40, 20, 0, .4); }
+.lp__cards img { display: block; width: 100%; height: auto; }
+@media (max-width: 900px) {
+  .lp { grid-template-columns: minmax(0, 1fr); }
+  .lp__info { position: static; }
+  .lp__cards { max-width: 520px; width: 100%; margin-inline: auto; }
+}
+@media (min-width: 1021px) {
+  .nav-group.is-closing .subnav { opacity: 0; visibility: hidden; transform: translate(-50%, 6px); }
+  .nav-group.is-closing .caret { transform: none; }
+}
