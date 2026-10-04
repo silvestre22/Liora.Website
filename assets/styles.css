@@ -628,3 +628,8 @@ details.more .gallery { margin-top: 14px; }
   .livra-hero { grid-template-columns: minmax(0, 1fr); }
   .livra-hero__img { justify-self: center; }
 }
+
+/* LIVRA product slides join seamlessly (designed as one continuous strip) */
+.lp__cards { gap: 0; border-radius: 20px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 24px 48px -32px rgba(40, 20, 0, .45); }
+.lp__cards li { border: 0; border-radius: 0; box-shadow: none; background: none; }
+.lp__cards img { margin-bottom: -1px; }
