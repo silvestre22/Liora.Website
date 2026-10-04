@@ -541,3 +541,10 @@ details.more .gallery { margin-top: 14px; }
 .wa-bubble__ico { flex: none; width: 28px; height: 28px; border-radius: 50%; background: #25d366; color: #fff; display: grid; place-items: center; }
 .wa-bubble__ico svg { width: 16px; height: 16px; }
 @media (max-width: 640px) { .wa-bubble { left: 8px; bottom: 24px; } }
+
+/* highlighted partner locations */
+.locs > span.is-star { border-color: var(--accent); background: var(--accent-soft); color: var(--accent-ink); font-weight: 600; }
+.locs > span.is-star::before { content: "♥"; margin-right: 6px; color: var(--accent); }
+
+/* ingredient lists without amounts */
+.dose--names li > span:first-child, .dose--names li > span[lang] { font-family: inherit; font-size: inherit; color: inherit; text-align: left; }
